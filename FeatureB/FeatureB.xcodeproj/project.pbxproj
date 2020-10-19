@@ -13,13 +13,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		52F201FA2F7180DA32EC1DAC /* Pods-FeatureB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureB.debug.xcconfig"; path = "Target Support Files/Pods-FeatureB/Pods-FeatureB.debug.xcconfig"; sourceTree = "<group>"; };
+		3132AD1D508BBBAA3AACE9E1 /* Pods-FeatureB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureB.release.xcconfig"; path = "Target Support Files/Pods-FeatureB/Pods-FeatureB.release.xcconfig"; sourceTree = "<group>"; };
 		569D41F2EBD37B61DE9F3C25 /* libPods-FeatureB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeatureB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B090B253D83AB0053C558 /* FeatureB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B090E253D83AB0053C558 /* FeatureB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureB.h; sourceTree = "<group>"; };
 		D60B090F253D83AB0053C558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60B094B253D87E30053C558 /* FeatureBComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureBComponent.swift; sourceTree = "<group>"; };
-		EC50A7660532440E1980CABD /* Pods-FeatureB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureB.release.xcconfig"; path = "Target Support Files/Pods-FeatureB/Pods-FeatureB.release.xcconfig"; sourceTree = "<group>"; };
+		EDE1DBEFDA9481E99B9F5E2F /* Pods-FeatureB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureB.debug.xcconfig"; path = "Target Support Files/Pods-FeatureB/Pods-FeatureB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,16 +34,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01D382A8CE5F540885D8A641 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				52F201FA2F7180DA32EC1DAC /* Pods-FeatureB.debug.xcconfig */,
-				EC50A7660532440E1980CABD /* Pods-FeatureB.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
 		BAE8572DC94C7FB98AD74099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -52,13 +42,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D065BAACCDE1D9DB7DDEA6F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1DBEFDA9481E99B9F5E2F /* Pods-FeatureB.debug.xcconfig */,
+				3132AD1D508BBBAA3AACE9E1 /* Pods-FeatureB.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		D60B0901253D83AB0053C558 = {
 			isa = PBXGroup;
 			children = (
 				D60B090D253D83AB0053C558 /* FeatureB */,
 				D60B090C253D83AB0053C558 /* Products */,
-				01D382A8CE5F540885D8A641 /* Pods */,
 				BAE8572DC94C7FB98AD74099 /* Frameworks */,
+				D065BAACCDE1D9DB7DDEA6F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60B0913253D83AB0053C558 /* Build configuration list for PBXNativeTarget "FeatureB" */;
 			buildPhases = (
-				E2ADB056E56139459AAEC7D0 /* [CP] Check Pods Manifest.lock */,
+				997163DEDECC378E3B47B67C /* [CP] Check Pods Manifest.lock */,
 				D60B0906253D83AB0053C558 /* Headers */,
 				D60B0907253D83AB0053C558 /* Sources */,
 				D60B0908253D83AB0053C558 /* Frameworks */,
@@ -157,7 +157,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E2ADB056E56139459AAEC7D0 /* [CP] Check Pods Manifest.lock */ = {
+		997163DEDECC378E3B47B67C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,7 +315,7 @@
 		};
 		D60B0914253D83AB0053C558 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52F201FA2F7180DA32EC1DAC /* Pods-FeatureB.debug.xcconfig */;
+			baseConfigurationReference = EDE1DBEFDA9481E99B9F5E2F /* Pods-FeatureB.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,7 +342,7 @@
 		};
 		D60B0915253D83AB0053C558 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC50A7660532440E1980CABD /* Pods-FeatureB.release.xcconfig */;
+			baseConfigurationReference = 3132AD1D508BBBAA3AACE9E1 /* Pods-FeatureB.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

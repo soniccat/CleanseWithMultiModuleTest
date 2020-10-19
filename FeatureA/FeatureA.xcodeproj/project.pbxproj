@@ -13,8 +13,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B3D01F0532399D3EEFF2E7D /* Pods-FeatureA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureA.release.xcconfig"; path = "Target Support Files/Pods-FeatureA/Pods-FeatureA.release.xcconfig"; sourceTree = "<group>"; };
-		8FDE7B22F4811F3EED8D72D5 /* Pods-FeatureA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureA.debug.xcconfig"; path = "Target Support Files/Pods-FeatureA/Pods-FeatureA.debug.xcconfig"; sourceTree = "<group>"; };
+		3D44A49581E8F4105ACF61A9 /* Pods-FeatureA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureA.release.xcconfig"; path = "Target Support Files/Pods-FeatureA/Pods-FeatureA.release.xcconfig"; sourceTree = "<group>"; };
+		7744696EECDCBA6DA187DBC2 /* Pods-FeatureA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureA.debug.xcconfig"; path = "Target Support Files/Pods-FeatureA/Pods-FeatureA.debug.xcconfig"; sourceTree = "<group>"; };
 		A3C68E794AE007CA2A7BF863 /* libPods-FeatureA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeatureA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B08ED253D83380053C558 /* FeatureA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B08F0253D83380053C558 /* FeatureA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureA.h; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B235FB8FABD2D3BB04EE4D5E /* Pods */ = {
+		C6A4331E422D86DE930D7EA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8FDE7B22F4811F3EED8D72D5 /* Pods-FeatureA.debug.xcconfig */,
-				6B3D01F0532399D3EEFF2E7D /* Pods-FeatureA.release.xcconfig */,
+				7744696EECDCBA6DA187DBC2 /* Pods-FeatureA.debug.xcconfig */,
+				3D44A49581E8F4105ACF61A9 /* Pods-FeatureA.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -57,8 +57,8 @@
 			children = (
 				D60B08EF253D83380053C558 /* FeatureA */,
 				D60B08EE253D83380053C558 /* Products */,
-				B235FB8FABD2D3BB04EE4D5E /* Pods */,
 				24FA44041BCA44F40879D477 /* Frameworks */,
+				C6A4331E422D86DE930D7EA4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60B08F5253D83380053C558 /* Build configuration list for PBXNativeTarget "FeatureA" */;
 			buildPhases = (
-				BA23312E29F5943A717AB5A4 /* [CP] Check Pods Manifest.lock */,
+				021FED93AFFE0A25F32EFA4A /* [CP] Check Pods Manifest.lock */,
 				D60B08E8253D83380053C558 /* Headers */,
 				D60B08E9253D83380053C558 /* Sources */,
 				D60B08EA253D83380053C558 /* Frameworks */,
@@ -157,7 +157,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BA23312E29F5943A717AB5A4 /* [CP] Check Pods Manifest.lock */ = {
+		021FED93AFFE0A25F32EFA4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,7 +315,7 @@
 		};
 		D60B08F6253D83380053C558 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FDE7B22F4811F3EED8D72D5 /* Pods-FeatureA.debug.xcconfig */;
+			baseConfigurationReference = 7744696EECDCBA6DA187DBC2 /* Pods-FeatureA.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,7 +342,7 @@
 		};
 		D60B08F7253D83380053C558 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B3D01F0532399D3EEFF2E7D /* Pods-FeatureA.release.xcconfig */;
+			baseConfigurationReference = 3D44A49581E8F4105ACF61A9 /* Pods-FeatureA.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
