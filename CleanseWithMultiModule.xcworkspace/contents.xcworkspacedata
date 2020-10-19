@@ -5,6 +5,15 @@
       location = "group:CleanseWithMultiModule.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:FeatureA/FeatureA.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FeatureB/FeatureB.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

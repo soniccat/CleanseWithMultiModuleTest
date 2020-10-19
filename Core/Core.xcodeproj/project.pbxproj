@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		5F0DF2A153CEBAEF05E9D25D /* libPods-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB197A6A82BDB38AA5DE68D /* libPods-Core.a */; };
 		D60B092E253D83D50053C558 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = D60B092C253D83D50053C558 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D60B0947253D85090053C558 /* CoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B0946253D85090053C558 /* CoreComponent.swift */; };
+		D60B0947253D85090053C558 /* CoreModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B0946253D85090053C558 /* CoreModule.swift */; };
+		D630B366253DA9ED0035D95E /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630B365253DA9ED0035D95E /* NetworkLayer.swift */; };
+		D630B368253DAAC90035D95E /* SingletonScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630B367253DAAC90035D95E /* SingletonScope.swift */; };
+		D630B36A253DABAB0035D95E /* SampleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630B369253DABAB0035D95E /* SampleDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +21,10 @@
 		D60B0929253D83D50053C558 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B092C253D83D50053C558 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		D60B092D253D83D50053C558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D60B0946253D85090053C558 /* CoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponent.swift; sourceTree = "<group>"; };
+		D60B0946253D85090053C558 /* CoreModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModule.swift; sourceTree = "<group>"; };
+		D630B365253DA9ED0035D95E /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		D630B367253DAAC90035D95E /* SingletonScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
+		D630B369253DABAB0035D95E /* SampleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataSource.swift; sourceTree = "<group>"; };
 		DFB197A6A82BDB38AA5DE68D /* libPods-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,7 +81,10 @@
 			children = (
 				D60B092C253D83D50053C558 /* Core.h */,
 				D60B092D253D83D50053C558 /* Info.plist */,
-				D60B0946253D85090053C558 /* CoreComponent.swift */,
+				D60B0946253D85090053C558 /* CoreModule.swift */,
+				D630B365253DA9ED0035D95E /* NetworkLayer.swift */,
+				D630B369253DABAB0035D95E /* SampleDataSource.swift */,
+				D630B367253DAAC90035D95E /* SingletonScope.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -186,7 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D60B0947253D85090053C558 /* CoreComponent.swift in Sources */,
+				D630B366253DA9ED0035D95E /* NetworkLayer.swift in Sources */,
+				D630B368253DAAC90035D95E /* SingletonScope.swift in Sources */,
+				D630B36A253DABAB0035D95E /* SampleDataSource.swift in Sources */,
+				D60B0947253D85090053C558 /* CoreModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 		7C0188BA89B66C337BF06511 /* libPods-FeatureB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D41F2EBD37B61DE9F3C25 /* libPods-FeatureB.a */; };
 		D60B0910253D83AB0053C558 /* FeatureB.h in Headers */ = {isa = PBXBuildFile; fileRef = D60B090E253D83AB0053C558 /* FeatureB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D60B094C253D87E30053C558 /* FeatureBComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B094B253D87E30053C558 /* FeatureBComponent.swift */; };
+		D630B36E253DAC9F0035D95E /* FeatureBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630B36D253DAC9F0035D95E /* FeatureBViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D60B090E253D83AB0053C558 /* FeatureB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureB.h; sourceTree = "<group>"; };
 		D60B090F253D83AB0053C558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60B094B253D87E30053C558 /* FeatureBComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureBComponent.swift; sourceTree = "<group>"; };
+		D630B36D253DAC9F0035D95E /* FeatureBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureBViewController.swift; sourceTree = "<group>"; };
 		EDE1DBEFDA9481E99B9F5E2F /* Pods-FeatureB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureB.debug.xcconfig"; path = "Target Support Files/Pods-FeatureB/Pods-FeatureB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				D60B090E253D83AB0053C558 /* FeatureB.h */,
 				D60B090F253D83AB0053C558 /* Info.plist */,
 				D60B094B253D87E30053C558 /* FeatureBComponent.swift */,
+				D630B36D253DAC9F0035D95E /* FeatureBViewController.swift */,
 			);
 			path = FeatureB;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D630B36E253DAC9F0035D95E /* FeatureBViewController.swift in Sources */,
 				D60B094C253D87E30053C558 /* FeatureBComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

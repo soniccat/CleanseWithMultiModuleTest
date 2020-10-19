@@ -1,5 +1,5 @@
 //
-//  CoreComponent.swift
+//  SingletonScope.swift
 //  Core
 //
 //  Created by Alexey Glushkov on 19.10.2020.
@@ -9,6 +9,4 @@
 import Foundation
 import Cleanse
 
-class Module {
-    
-}
+public typealias SingletonBinder = Binder<Singleton>

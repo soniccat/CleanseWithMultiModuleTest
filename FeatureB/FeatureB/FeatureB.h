@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FeatureB"
 
 //! Project version number for FeatureB.
 FOUNDATION_EXPORT double FeatureBVersionNumber;

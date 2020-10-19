@@ -9,6 +9,14 @@
 import Foundation
 import Cleanse
 
-class FeatureAComponent {
+public class FeatureAComponent: Component {
+    public typealias Root = FeatureAViewController
     
+    public static func configureRoot(binder bind: ReceiptBinder<FeatureAViewController>) -> BindingReceipt<FeatureAViewController> {
+        bind.to(factory: FeatureAViewController.init)
+    }
+
+    public static func configure(binder: Binder<Unscoped>) {
+        binder.include(module: FeatureAViewController.Module.self)
+    }
 }

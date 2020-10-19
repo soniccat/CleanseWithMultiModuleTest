@@ -14,6 +14,8 @@
 		D60B08D5253D7B0F0053C558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60B08D3253D7B0F0053C558 /* Main.storyboard */; };
 		D60B08DA253D7B120053C558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60B08D8253D7B120053C558 /* LaunchScreen.storyboard */; };
 		D60B08E2253D7C1D0053C558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60B08E1253D7C1D0053C558 /* Assets.xcassets */; };
+		D630B370253DADC30035D95E /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630B36F253DADC30035D95E /* AppComponent.swift */; };
+		D630B372253DAE210035D95E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630B371253DAE210035D95E /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		D60B08D9253D7B120053C558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D60B08DB253D7B120053C558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60B08E1253D7C1D0053C558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		D630B36F253DADC30035D95E /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		D630B371253DAE210035D95E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		EA94D7A30D70847F760B3821 /* Pods-CleanseWithMultiModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanseWithMultiModule.release.xcconfig"; path = "Target Support Files/Pods-CleanseWithMultiModule/Pods-CleanseWithMultiModule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,8 @@
 				D60B08D3253D7B0F0053C558 /* Main.storyboard */,
 				D60B08D8253D7B120053C558 /* LaunchScreen.storyboard */,
 				D60B08DB253D7B120053C558 /* Info.plist */,
+				D630B36F253DADC30035D95E /* AppComponent.swift */,
+				D630B371253DAE210035D95E /* App.swift */,
 			);
 			name = CleanseWithMultiModule;
 			sourceTree = "<group>";
@@ -189,7 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60B08D2253D7B0E0053C558 /* ViewController.swift in Sources */,
+				D630B370253DADC30035D95E /* AppComponent.swift in Sources */,
 				D60B08CE253D7B0E0053C558 /* AppDelegate.swift in Sources */,
+				D630B372253DAE210035D95E /* App.swift in Sources */,
 				D60B08D0253D7B0E0053C558 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

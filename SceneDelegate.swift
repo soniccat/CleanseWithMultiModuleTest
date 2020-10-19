@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Cleanse
+import FeatureB
+import FeatureA
+
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    private var factory: ComponentFactory<AppComponent>!
+    var app: App!
     var window: UIWindow?
 
 
@@ -18,6 +25,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        factory = try! ComponentFactory.of(AppComponent.self)
+        app = factory.build(())
+        
+        let avc = app.featureAVC()
+        let bvc = app.featureBVC()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

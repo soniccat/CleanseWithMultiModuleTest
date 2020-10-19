@@ -4,8 +4,10 @@ PODS:
     - Cleanse (= 4.2.6)
   - FeatureA (0.1.0):
     - Cleanse (= 4.2.6)
+    - Core
   - FeatureB (0.1.0):
     - Cleanse (= 4.2.6)
+    - Core
 
 DEPENDENCIES:
   - Core (from `./Core`)
@@ -26,9 +28,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Cleanse: 6bfc62033dcc0e5ba7992f410a5352ddd1283551
-  Core: 2441f2aa879541da9b9bc303823f501c9782c050
-  FeatureA: a5834dbe1bdb11c5e805007cf55aac1d708f7d59
-  FeatureB: 2ceef5fde013e4273899687351fc3fc538daba9f
+  Core: 4f7781563df42c14dbcce00e5fe6e2ec218ab773
+  FeatureA: b9f087d59b2b5f2079b4b1b63c8cb33ccff916d0
+  FeatureB: e8c9db453e0cb366b0f2e073c57cc880fad9d9d2
 
 PODFILE CHECKSUM: 394f63f45115f009c23a3bc21934286657254f31
 
