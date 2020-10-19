@@ -1,16 +1,35 @@
 PODS:
   - Cleanse (4.2.6)
+  - Core (0.1.0):
+    - Cleanse (= 4.2.6)
+  - FeatureA (0.1.0):
+    - Cleanse (= 4.2.6)
+  - FeatureB (0.1.0):
+    - Cleanse (= 4.2.6)
 
 DEPENDENCIES:
-  - Cleanse (= 4.2.6)
+  - Core (from `./Core`)
+  - FeatureA (from `./FeatureA`)
+  - FeatureB (from `./FeatureB`)
 
 SPEC REPOS:
   trunk:
     - Cleanse
 
+EXTERNAL SOURCES:
+  Core:
+    :path: "./Core"
+  FeatureA:
+    :path: "./FeatureA"
+  FeatureB:
+    :path: "./FeatureB"
+
 SPEC CHECKSUMS:
   Cleanse: 6bfc62033dcc0e5ba7992f410a5352ddd1283551
+  Core: 2441f2aa879541da9b9bc303823f501c9782c050
+  FeatureA: a5834dbe1bdb11c5e805007cf55aac1d708f7d59
+  FeatureB: 2ceef5fde013e4273899687351fc3fc538daba9f
 
-PODFILE CHECKSUM: 27153f20d37176e57b1662a67d6c84163ca92bd1
+PODFILE CHECKSUM: 394f63f45115f009c23a3bc21934286657254f31
 
 COCOAPODS: 1.9.3

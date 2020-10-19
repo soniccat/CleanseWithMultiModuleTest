@@ -5,23 +5,7 @@ def addCleanse()
 end
 
 target 'CleanseWithMultiModule' do
-  addCleanse()
-end
-
-target 'Core' do
-  project 'Core/Core.xcodeproj'
-  workspace 'CleanseWithMultiModule.xcworkspace'
-  addCleanse()
-end
-
-target 'FeatureA' do
-  project 'FeatureA/FeatureA.xcodeproj'
-  workspace 'CleanseWithMultiModule.xcworkspace'
-  addCleanse()
-end
-
-target 'FeatureB' do
-  project 'FeatureB/FeatureB.xcodeproj'
-  workspace 'CleanseWithMultiModule.xcworkspace'
-  addCleanse()
+  pod 'FeatureA', :path => './FeatureA'
+  pod 'FeatureB', :path => './FeatureB'
+  pod 'Core', :path => './Core'
 end
