@@ -12,27 +12,27 @@ import Core
 import FeatureB
 import FeatureA
 
-class App {
-    private let featureAComponent: ComponentFactory<FeatureAComponent>
+class App: FeatureA.Deps {
+//    private let featureAComponent: ComponentFactory<FeatureAComponent>
     private let featureBComponent: ComponentFactory<FeatureBComponent>
     let networkLayer: NetworkLayer
     let sampleDataSource: SampleDataSource
     
     init(
-        featureAComponent: ComponentFactory<FeatureAComponent>,
+//        featureAComponent: ComponentFactory<FeatureAComponent>,
         featureBComponent: ComponentFactory<FeatureBComponent>,
         networkLayer: NetworkLayer,
         sampleDataSource: SampleDataSource
     ) {
-        self.featureAComponent = featureAComponent
+//        self.featureAComponent = featureAComponent
         self.featureBComponent = featureBComponent
         self.networkLayer = networkLayer
         self.sampleDataSource = sampleDataSource
     }
     
-    func featureAVC() -> FeatureAViewController {
-        return featureAComponent.build(())
-    }
+//    func featureAVC() -> FeatureAViewController {
+//        return featureAComponent.build(())
+//    }
     
     func featureBVC() -> FeatureBViewController {
         return featureBComponent.build(())

@@ -9,8 +9,9 @@
 import Foundation
 import Cleanse
 
-public class FeatureAComponent: Component {
+public class FeatureAComponent: RootComponent {
     public typealias Root = FeatureAViewController
+    public typealias Seed = Deps
     
     public static func configureRoot(binder bind: ReceiptBinder<FeatureAViewController>) -> BindingReceipt<FeatureAViewController> {
         bind.to(factory: FeatureAViewController.init)

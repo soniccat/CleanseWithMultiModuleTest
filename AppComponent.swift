@@ -21,7 +21,7 @@ struct AppComponent : Cleanse.RootComponent {
 
     static func configure(binder: SingletonBinder) {
         binder.include(module: CoreModule.self)
-        binder.install(dependency: FeatureAComponent.self)
+        //binder.install(dependency: FeatureAComponent.self)
         binder.install(dependency: FeatureBComponent.self)
     }
 }

@@ -16,6 +16,7 @@ import FeatureA
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private var factory: ComponentFactory<AppComponent>!
+    private var factoryA: ComponentFactory<FeatureAComponent>!
     var app: App!
     var window: UIWindow?
 
@@ -27,9 +28,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         factory = try! ComponentFactory.of(AppComponent.self)
+        factoryA = try! ComponentFactory.of(FeatureAComponent.self)
         app = factory.build(())
         
-        let avc = app.featureAVC()
+        let avc = factoryA.build(app)
         let bvc = app.featureBVC()
     }
 

@@ -10,8 +10,8 @@ import UIKit
 import Core
 import Cleanse
 
-public struct Deps {
-    var networkLayer: NetworkLayer
+public protocol Deps {
+    var networkLayer: NetworkLayer { get }
 }
 
 public class FeatureAViewController: UIViewController {
@@ -28,7 +28,7 @@ public class FeatureAViewController: UIViewController {
 extension FeatureAViewController {
     public struct Module: Cleanse.Module {
         public static func configure(binder: UnscopedBinder) {
-            binder.bind().to(factory: Deps.init)
+            //binder.bind().to(factory: Deps.init)
         }
     }
 }
